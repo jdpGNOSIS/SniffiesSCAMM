@@ -1,0 +1,78 @@
+{
+  "command": "bots 2 visit https://httpbin.org/get",
+  "total_agents": 2,
+  "total_time_ms": 1562,
+  "success_count": 2,
+  "failed_count": 0,
+  "timed_out_count": 0,
+  "block_count": 0,
+  "summary": "Swarm complete: 2/2 agents succeeded, avg 1265ms per successful agent. Total: 1562ms.",
+  "agent_results": [
+    {
+      "agent_id": 1,
+      "status": "success",
+      "actions_taken": [
+        "Agent 1 starting: Navigate to target, verify page loads, report status",
+        "Navigating to https://httpbin.org/get",
+        "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK"
+      ],
+      "result": "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK",
+      "result_data": {
+        "summary": "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK",
+        "http_response": {
+          "status": 200,
+          "headers": {
+            "date": "Fri, 26 Jun 2026 21:40:39 GMT",
+            "content-type": "application/json",
+            "content-length": "304",
+            "connection": "keep-alive",
+            "server": "gunicorn/19.9.0",
+            "access-control-allow-origin": "*",
+            "access-control-allow-credentials": "true"
+          },
+          "body": "{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-httpx/0.28.1\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6a3ef1d7-4867822f0119f1b56dd0aa37\"\n  }, \n  \"origin\": \"136.49.96.209\", \n  \"url\": \"https://httpbin.org/get\"\n}\n",
+          "url": "https://httpbin.org/get"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:32.807878+00:00",
+      "completed_at": "2026-06-26T21:40:34.364874+00:00",
+      "duration_ms": 1562,
+      "subtask_id": "c46064f9"
+    },
+    {
+      "agent_id": 2,
+      "status": "success",
+      "actions_taken": [
+        "Agent 2 starting: Navigate to target, verify page loads, report status",
+        "Navigating to https://httpbin.org/get",
+        "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK"
+      ],
+      "result": "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK",
+      "result_data": {
+        "summary": "Navigate to https://httpbin.org/get: HTTP 200 \u2014 page OK",
+        "http_response": {
+          "status": 200,
+          "headers": {
+            "date": "Fri, 26 Jun 2026 21:40:39 GMT",
+            "content-type": "application/json",
+            "content-length": "304",
+            "connection": "keep-alive",
+            "server": "gunicorn/19.9.0",
+            "access-control-allow-origin": "*",
+            "access-control-allow-credentials": "true"
+          },
+          "body": "{\n  \"args\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-httpx/0.28.1\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6a3ef1d7-5ca715274a590de576395216\"\n  }, \n  \"origin\": \"136.49.96.209\", \n  \"url\": \"https://httpbin.org/get\"\n}\n",
+          "url": "https://httpbin.org/get"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:33.390874+00:00",
+      "completed_at": "2026-06-26T21:40:34.359877+00:00",
+      "duration_ms": 968,
+      "subtask_id": "22759a8e"
+    }
+  ],
+  "warnings": [],
+  "generated_at": "2026-06-26T21:40:34.365879+00:00"
+}

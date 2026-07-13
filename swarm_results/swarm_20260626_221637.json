@@ -1,0 +1,42 @@
+{
+  "command": "bots 1 create email address admin@mybusiness.com",
+  "total_agents": 1,
+  "total_time_ms": 30,
+  "success_count": 1,
+  "failed_count": 0,
+  "timed_out_count": 0,
+  "block_count": 0,
+  "summary": "Swarm complete: 1/1 agents succeeded, avg 30ms per successful agent. Total: 30ms.",
+  "agent_results": [
+    {
+      "agent_id": 1,
+      "status": "success",
+      "actions_taken": [
+        "Agent 1 starting: Create email account #1: admin1@mybusiness.com",
+        "Provisioning admin1@mybusiness.com via local",
+        "Created admin1@mybusiness.com \u2014 credentials saved to C:\\Users\\DEZRA\\OneDrive\\Desktop\\area51\\SniffiesSCAMM\\data\\mailboxes\\credentials.json"
+      ],
+      "result": "Created admin1@mybusiness.com \u2014 credentials saved to C:\\Users\\DEZRA\\OneDrive\\Desktop\\area51\\SniffiesSCAMM\\data\\mailboxes\\credentials.json",
+      "result_data": {
+        "summary": "Created admin1@mybusiness.com \u2014 credentials saved to C:\\Users\\DEZRA\\OneDrive\\Desktop\\area51\\SniffiesSCAMM\\data\\mailboxes\\credentials.json",
+        "email": "admin1@mybusiness.com",
+        "result": {
+          "success": true,
+          "email": "admin1@mybusiness.com",
+          "password": "hj95YJjgkL1O&hnZ",
+          "provider": "local",
+          "smtp_server": "localhost:2525",
+          "imap_server": "localhost:2587",
+          "message": "Created admin1@mybusiness.com \u2014 credentials saved to C:\\Users\\DEZRA\\OneDrive\\Desktop\\area51\\SniffiesSCAMM\\data\\mailboxes\\credentials.json"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T22:16:37.382310+00:00",
+      "completed_at": "2026-06-26T22:16:37.407980+00:00",
+      "duration_ms": 30,
+      "subtask_id": "f0030aed"
+    }
+  ],
+  "warnings": [],
+  "generated_at": "2026-06-26T22:16:37.407980+00:00"
+}

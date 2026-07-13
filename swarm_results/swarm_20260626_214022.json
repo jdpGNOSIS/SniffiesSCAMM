@@ -1,0 +1,113 @@
+{
+  "command": "bots 3 check if my API at https://httpbin.org/get is responding",
+  "total_agents": 3,
+  "total_time_ms": 2422,
+  "success_count": 3,
+  "failed_count": 0,
+  "timed_out_count": 0,
+  "block_count": 0,
+  "summary": "Swarm complete: 3/3 agents succeeded, avg 1682ms per successful agent. Total: 2422ms.",
+  "agent_results": [
+    {
+      "agent_id": 1,
+      "status": "success",
+      "actions_taken": [
+        "Agent 1 starting: Send API test request #1 \u2014 measure response time and status",
+        "API #1: HTTP 405 in 1687ms"
+      ],
+      "result": "API #1: HTTP 405 in 1687ms",
+      "result_data": {
+        "summary": "API #1: HTTP 405 in 1687ms",
+        "latency_ms": 1687,
+        "http_response": {
+          "status": 405,
+          "headers": {
+            "date": "Fri, 26 Jun 2026 21:40:27 GMT",
+            "content-type": "text/html",
+            "content-length": "178",
+            "connection": "keep-alive",
+            "server": "gunicorn/19.9.0",
+            "allow": "HEAD, GET, OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-allow-credentials": "true"
+          },
+          "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
+          "url": "https://httpbin.org/get"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:19.913967+00:00",
+      "completed_at": "2026-06-26T21:40:22.303969+00:00",
+      "duration_ms": 2391,
+      "subtask_id": "2234daea"
+    },
+    {
+      "agent_id": 2,
+      "status": "success",
+      "actions_taken": [
+        "Agent 2 starting: Send API test request #2 \u2014 measure response time and status",
+        "API #2: HTTP 405 in 968ms"
+      ],
+      "result": "API #2: HTTP 405 in 968ms",
+      "result_data": {
+        "summary": "API #2: HTTP 405 in 968ms",
+        "latency_ms": 968,
+        "http_response": {
+          "status": 405,
+          "headers": {
+            "date": "Fri, 26 Jun 2026 21:40:27 GMT",
+            "content-type": "text/html",
+            "content-length": "178",
+            "connection": "keep-alive",
+            "server": "gunicorn/19.9.0",
+            "allow": "HEAD, OPTIONS, GET",
+            "access-control-allow-origin": "*",
+            "access-control-allow-credentials": "true"
+          },
+          "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
+          "url": "https://httpbin.org/get"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:20.635966+00:00",
+      "completed_at": "2026-06-26T21:40:22.308971+00:00",
+      "duration_ms": 1671,
+      "subtask_id": "abcd1a1c"
+    },
+    {
+      "agent_id": 3,
+      "status": "success",
+      "actions_taken": [
+        "Agent 3 starting: Send API test request #3 \u2014 measure response time and status",
+        "API #3: HTTP 405 in 250ms"
+      ],
+      "result": "API #3: HTTP 405 in 250ms",
+      "result_data": {
+        "summary": "API #3: HTTP 405 in 250ms",
+        "latency_ms": 250,
+        "http_response": {
+          "status": 405,
+          "headers": {
+            "date": "Fri, 26 Jun 2026 21:40:27 GMT",
+            "content-type": "text/html",
+            "content-length": "178",
+            "connection": "keep-alive",
+            "server": "gunicorn/19.9.0",
+            "allow": "GET, HEAD, OPTIONS",
+            "access-control-allow-origin": "*",
+            "access-control-allow-credentials": "true"
+          },
+          "body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>\n",
+          "url": "https://httpbin.org/get"
+        }
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:21.340971+00:00",
+      "completed_at": "2026-06-26T21:40:22.312966+00:00",
+      "duration_ms": 985,
+      "subtask_id": "f547e8b2"
+    }
+  ],
+  "warnings": [],
+  "generated_at": "2026-06-26T21:40:22.314967+00:00"
+}

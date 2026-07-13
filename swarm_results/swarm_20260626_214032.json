@@ -1,0 +1,54 @@
+{
+  "command": "bots 2 scrape https://httpbin.org/anything",
+  "total_agents": 2,
+  "total_time_ms": 2139,
+  "success_count": 2,
+  "failed_count": 0,
+  "timed_out_count": 0,
+  "block_count": 0,
+  "summary": "Swarm complete: 2/2 agents succeeded, avg 1499ms per successful agent. Total: 2139ms.",
+  "agent_results": [
+    {
+      "agent_id": 1,
+      "status": "success",
+      "actions_taken": [
+        "Agent 1 starting: Scrape and summarize content from https://httpbin.org/anything/page=1",
+        "GET https://httpbin.org/anything/page=1",
+        "Scraped https://httpbin.org/anything/page=1: 200, 399 chars"
+      ],
+      "result": "Scraped https://httpbin.org/anything/page=1: 200, 399 chars",
+      "result_data": {
+        "summary": "Scraped https://httpbin.org/anything/page=1: 200, 399 chars",
+        "body_preview": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-httpx/0.28.1\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6a3ef1d5-087ef5dd3029f4d37f6a9b46\"\n  }, \n  \"json\": null, \n",
+        "status": 200
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:30.670869+00:00",
+      "completed_at": "2026-06-26T21:40:32.771874+00:00",
+      "duration_ms": 2110,
+      "subtask_id": "db4327b6"
+    },
+    {
+      "agent_id": 2,
+      "status": "success",
+      "actions_taken": [
+        "Agent 2 starting: Scrape and summarize content from https://httpbin.org/anything/page=2",
+        "GET https://httpbin.org/anything/page=2",
+        "Scraped https://httpbin.org/anything/page=2: 200, 399 chars"
+      ],
+      "result": "Scraped https://httpbin.org/anything/page=2: 200, 399 chars",
+      "result_data": {
+        "summary": "Scraped https://httpbin.org/anything/page=2: 200, 399 chars",
+        "body_preview": "{\n  \"args\": {}, \n  \"data\": \"\", \n  \"files\": {}, \n  \"form\": {}, \n  \"headers\": {\n    \"Accept\": \"*/*\", \n    \"Accept-Encoding\": \"gzip, deflate\", \n    \"Host\": \"httpbin.org\", \n    \"User-Agent\": \"python-httpx/0.28.1\", \n    \"X-Amzn-Trace-Id\": \"Root=1-6a3ef1d5-0e75116134d3120b4e31a2e2\"\n  }, \n  \"json\": null, \n",
+        "status": 200
+      },
+      "errors": [],
+      "started_at": "2026-06-26T21:40:31.901874+00:00",
+      "completed_at": "2026-06-26T21:40:32.784875+00:00",
+      "duration_ms": 889,
+      "subtask_id": "f5993172"
+    }
+  ],
+  "warnings": [],
+  "generated_at": "2026-06-26T21:40:32.786874+00:00"
+}
